@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event-Ticket</title>
+  </head>
+  <style>
+    .ticket-body {
+      width: 600px;
+      height: 230px;
+      margin: 30px auto;
+      display: flex;
+      border-radius: 10px;
+    }
+
+    .guest-part {
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 8px 3px plum;
+      border: 0.5px solid black;
+      border-right: 2.5px dashed black;
+      padding: 10px;
+      background-color: #f7e6ff;
+    }
+
+    .event-part {
+      width: 50%;
+      border-radius: 10px;
+      box-shadow: 0 0 8px 3px plum;
+      border: 0.5px solid black;
+      border-left: none;
+      padding: 10px;
+      background-color: #f7e6ff;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .heading-1 {
+      display: flex;
+    }
+
+    .date {
+      font-size: 16px;
+      position: absolute;
+      left: 43%;
+      top: 50px;
+      border: 4px double grey;
+      padding: 3px;
+      border-radius: 7px;
+    }
+
+    .time {
+      display: flex;
+      margin-top: 35px;
+      margin-left: 40px;
+      flex-direction: row;
+      font-weight: bold;
+    }
+
+    .price {
+      margin-left: 34px;
+    }
+
+    .Christmas-img {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .Address {
+      margin-left: 45px;
+      font-weight: bold;
+    }
+
+    .img-1 {
+      height: 45px;
+      position: absolute;
+      right: 32%;
+    }
+
+    .heading-2 {
+      text-align: center;
+    }
+
+    .img-2 {
+      display: flex;
+      margin: 10px auto;
+    }
+
+    @media screen and (max-width: 600px) {
+      .ticket-body {
+        width: 500px;
+        margin: 30px;
+      }
+
+      .ticket-body {
+        flex-direction: column;
+      }
+      .time {
+        margin-left: 95px;
+      }
+      .Address {
+        margin-left: 20px;
+      }
+      .img-1 {
+        height: 45px;
+        position: absolute;
+        right: 26%;
+      }
+      .guest-part {
+        border-right: 2.5px solid plum;
+      }
+    }
+  </style>
+  <body>
+    <div class="ticket-body">
+      <div class="guest-part">
+        <img src="logo.png" class="logo" />
+        <div class="heading-1">
+          <div>
+            <h2>
+              CHRISTMAS <br />
+              PARTY 20<sub>24</sub>!!
+            </h2>
+          </div>
+          <div>
+            <p class="date">December 25, 2024</p>
+          </div>
+          <div class="time">
+            <div>
+              Time:<br />
+              5:00 PM
+            </div>
+            <div class="price">Price:<br />300</div>
+          </div>
+        </div>
+
+        <div class="Christmas-img">
+          <img src="Christmas giveaway-amico.png" height="70px" />
+          <div class="Address">
+            Address: G.H.Raisoni, Amravti University, Shraddha Park, Wadi,
+            Nagpur - 440016
+          </div>
+        </div>
+      </div>
+
+      <div class="event-part">
+        <img src="logo.png" class="logo" />
+        <img src="christmas-bell.png" class="img-1" />
+
+        <div>
+          <h3 class="heading-2">NO: 123456789</h3>
+          <img src="qr-code.png" height="90px" class="img-2" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
